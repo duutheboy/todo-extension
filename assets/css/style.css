@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 450px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 4%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#new-task {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+#add-task {
+    margin-top: 2%;
+    padding: 3%;
+    width: 100%;
+    background-color: #25a18e;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: opacity 0.7s ease;
+    border: none;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+#add-task:hover {
+    opacity: 0.5;
+}
+
+#task-list {
+    list-style: none;
+    margin-top: 5%;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    background-color: #e0e0e0;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 92%;
+}
+
+#task-list li span {
+    flex-grow: 1;
+    margin-left: 10px;
+    word-break: break-all;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+button:not(#add-task) {
+    margin-left: 5px;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: opacity 0.6s ease;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.edit-btn {
+    background-color: #f4f4f4;
+}
+
+.del-btn {
+    background-color: #ee6c4d;
+}
